@@ -65,3 +65,22 @@ public class p25 {
         in.close(); // Close Scanner to prevent resource leak
     }
 }
+/*
+| **Component**                  | **Description**                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------------- |
+| **Class Name**                 | `Tender` — Represents company tender information.                                                 |
+| **Data Members**               | `int cost` (bid amount) <br> `String cname` (company name)                                        |
+| **Scanner Object**             | `Scanner in = new Scanner(System.in)` — takes input inside the class.                             |
+| **getData() Method**           | Reads company name using `nextLine()` and bid amount using `nextInt()`. Ensures newline handling. |
+| **display() Method**           | Prints company name and bid cost.                                                                 |
+| **Main Class**                 | `p25` — contains the `main` method.                                                               |
+| **Input: Number of Companies** | User enters `noc`. If noc ≤ 0 → prints error and exits.                                           |
+| **Object Array**               | `Tender[] e = new Tender[noc]` — stores tender objects for each company.                          |
+| **Data Collection Loop**       | Iterates `noc` times; creates Tender objects and calls `getData()` for each.                      |
+| **Display Loop**               | Prints details of all companies using `display()`.                                                |
+| **Find Minimum Bid**           | Compares cost values to find lowest bid. Tracks position via `loc`.                               |
+| **Output (Lowest Bid)**        | Prints company name and cost of company with the lowest bid.                                      |
+| **Scanner close()**            | Closes main `Scanner in` object to prevent resource leak.                                         |
+| **Purpose**                    | Demonstrates object arrays, user input handling, and finding minimum values using Java OOP.       |
+*/
+
