@@ -65,3 +65,22 @@ public class p30 {
         in.close(); // Close Scanner to prevent resource leak
     }
 }
+
+/*
+| **Component**            | **Description**                                                                     |
+| ------------------------ | ----------------------------------------------------------------------------------- |
+| **Class Name**           | `Tender` — Represents each company's tender details.                                |
+| **Data Members**         | `int cost;` (bid amount) <br> `String cname;` (company name)                        |
+| **Scanner Object**       | `Scanner in = new Scanner(System.in);` — Used inside the class for input.           |
+| **getData() Method**     | Prompts the user for company name and bid cost; reads input values.                 |
+| **display() Method**     | Prints the company name and bid cost on screen.                                     |
+| **Main Class**           | `p30` — Contains the `main` method that runs the program.                           |
+| **User Input**           | Asks user: *“Enter number of companies”*                                            |
+| **Array of Objects**     | `Tender[] e = new Tender[noc];` — Stores Tender objects for each company.           |
+| **Data Collection Loop** | For each company: creates a Tender object and calls `getData()`                     |
+| **Display Loop**         | Prints each company's tender details using `display()`                              |
+| **Finding Lowest Bid**   | Compares all `cost` values to find the minimum; tracks index of lowest bid company. |
+| **Output**               | Displays all tender details + name and cost of **company with the lowest bid**.     |
+| **Error Handling**       | If number of companies ≤ 0 → prints *“Invalid number of companies!”*                |
+| **Closing Scanner**      | `in.close()` avoids resource leak warnings.                                         |
+*/
